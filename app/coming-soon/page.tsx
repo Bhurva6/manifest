@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { FormEvent, useState } from "react";
 
 export default function ComingSoonPage() {
@@ -20,7 +21,12 @@ export default function ComingSoonPage() {
     <main className="comingsoon-page">
       <div className="comingsoon-bg" aria-hidden="true" />
 
+      <nav className="comingsoon-nav" aria-label="Coming soon navigation">
+        <Link href="/collection">Types</Link>
+      </nav>
+
       <section className="comingsoon-card">
+        <p className="comingsoon-label">the manifest</p>
         <Image
           className="comingsoon-logo"
           src="/brand/logo-maroon-cream.svg"
