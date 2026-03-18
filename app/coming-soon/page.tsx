@@ -23,10 +23,7 @@ export default function ComingSoonPage() {
             priority
           />
 
-          <h1 className="comingsoon-title">Your promotion called</h1>
-          <h2 className="comingsoon-sub-title">
-            it wants better outfits and we&apos;re coming soon to deliver.
-          </h2>
+          <p className="comingsoon-title">Your promotion called, it wants better outfits and we&apos;re coming soon to deliver.</p>
 
           <p className="comingsoon-subtitle">
             <button

@@ -128,15 +128,6 @@
   text-align: center;
 }
 
-.comingsoon-sub-title {
-  margin: 0;
-  font-family: var(--font-sans), sans-serif;
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  letter-spacing: 0.01em;
-  color: var(--brand-primary);
-  text-align: center;
-}
-
 .comingsoon-subtitle {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
