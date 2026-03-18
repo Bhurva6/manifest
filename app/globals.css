@@ -87,27 +87,6 @@
   animation: comingsoonDrift 14s ease-in-out infinite alternate;
 }
 
-.comingsoon-nav {
-  position: absolute;
-  top: clamp(0.85rem, 2vw, 1.4rem);
-  right: clamp(1rem, 3vw, 2.4rem);
-  z-index: 2;
-  font-family: var(--font-sans), sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.comingsoon-nav a {
-  color: var(--brand-primary);
-  text-decoration: none;
-}
-
-.comingsoon-nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
 .comingsoon-card {
   position: relative;
   z-index: 1;
@@ -131,16 +110,18 @@
 .comingsoon-label {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(85, 7, 20, 0.8);
+  color: var(--brand-primary);
 }
 
 .comingsoon-title {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
   font-size: clamp(2rem, 4.4vw, 3.4rem);
+  font-weight: 400;
   line-height: 0.96;
   letter-spacing: 0.01em;
   color: var(--brand-primary);
@@ -164,120 +145,12 @@
   text-align: center;
 }
 
-.comingsoon-seat-link {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  font: inherit;
-  font-weight: 700;
-  color: var(--brand-primary);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  cursor: pointer;
-}
-
 .comingsoon-warning {
   margin: 0;
   font-family: var(--font-sans), sans-serif;
   font-size: 0.98rem;
   color: rgba(17, 17, 17, 0.76);
   text-align: center;
-}
-
-.comingsoon-modal-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  display: grid;
-  place-items: center;
-  padding: 1rem;
-  background: rgba(17, 17, 17, 0.36);
-}
-
-.comingsoon-modal {
-  width: min(460px, 100%);
-  display: grid;
-  gap: 1rem;
-  padding: 1.2rem;
-  border-radius: 2px;
-  background: #fff;
-}
-
-.comingsoon-modal h2 {
-  margin: 0;
-  font-family: var(--font-sans), sans-serif;
-  font-size: 1.12rem;
-}
-
-.comingsoon-modal form {
-  display: grid;
-  gap: 0.8rem;
-}
-
-.comingsoon-modal input {
-  width: 100%;
-  min-height: 44px;
-  padding: 0 0.85rem;
-  border: 1px solid rgba(17, 17, 17, 0.2);
-  font-family: var(--font-sans), sans-serif;
-  font-size: 0.95rem;
-}
-
-.comingsoon-modal button {
-  min-height: 44px;
-  border: 0;
-  background: var(--brand-primary);
-  color: #fff;
-  font-family: var(--font-sans), sans-serif;
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.comingsoon-thanks {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  z-index: 61;
-  padding: 0.72rem 1rem;
-  background: var(--brand-primary);
-  color: #fff;
-  font-family: var(--font-sans), sans-serif;
-  font-size: 0.9rem;
-  animation: comingsoonThanks 2.6s ease;
-}
-
-@keyframes comingsoonDrift {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-
-  100% {
-    transform: translate3d(-2%, 2%, 0) scale(1.04);
-  }
-}
-
-@keyframes comingsoonThanks {
-  0% {
-    opacity: 0;
-    transform: translateY(8px) scale(0.92);
-  }
-
-  12% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-
-  85% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-8px) scale(1.04);
-  }
 }
 :root {
   --brand-primary: #550714;
