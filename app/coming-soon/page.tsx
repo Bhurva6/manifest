@@ -32,7 +32,7 @@ export default function ComingSoonPage() {
             >
               Save my seat at launch
             </button>
-            {' '}- Be the first to know when we go live
+            {' '}- Be the first to know when we go live!
           </p>
 
           <p className="comingsoon-warning">Warning: May cause random compliments at work</p>
